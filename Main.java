@@ -32,7 +32,7 @@ public class Main {
 		}
 		double[][] b = new double[11][16];
 		for (int i = 0; i < b.length; i++) {
-			for (int j = 0; j < b.length; j++) {
+			for (int j = 0; j < b[i].length; j++) {
 			b[i][j] = calcE(e[i], x[j]);
 			}
 		}
