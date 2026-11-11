@@ -26,6 +26,7 @@ public class Main {
 		for (int i = 0; i < e.length; i++) {
 			e[i] = 2 + i*2;
 		}
+		
 		float[] x = new float[16];
 		for (int i = 0; i < x.length; i++) {
 			x[i] = -10 + random.nextFloat() * 18;
@@ -36,15 +37,19 @@ public class Main {
 			b[i][j] = calcE(e[i], x[j]);
 			}
 		}
-		System.out.println("МАССИВ E");
+
+		/*
+		System.out.println("E");
 		for (int i = 0; i < e.length; i++) {
 			System.out.print(e[i] + " ");
 		}
 		System.out.println("\n");
-		System.out.println("МАССИВ Х");
+		System.out.println("Х");
 		for (int i = 0; i < x.length; i++) {
 			System.out.printf("%.5f ", x[i]);
 		}
+		*/
+		
 		System.out.println("\n");
 		System.out.println("THE MATRIX");
 		printMx(b);
